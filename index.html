@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio Web Design</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles.css">
+	<script src="./scripts.js"></script>
+	<link rel="icon" type="image/jpg" href="./imgs/favicon.jpg">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo-holder">
+			<div class="logo">T</div>
+			<div class="logo-text">Portfolio Website</div>
+		</a>
+		<nav>
+			<ul id="menu">
+				<li>
+					<a href="#skills">Habilidades</a>
+				</li>
+				<li>
+					<a href="#projects">Proyectos</a>
+				</li>
+				<li>
+					<a href="#chatbot">Chatbot</a>
+				</li>
+				<li>
+					<a href="mailto:tofolcanodam@gmail.com" class="button">Contacta conmigo</a>
+				</li>
+			</ul>
+			<a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+				<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+					<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+				</svg>
+			</a>
+		</nav>
+	</header>
+	<main>
+		<section class="hero container">
+			<div class="hero-blue">
+				<div>
+					<h1><small>Hola soy</small>
+						Tòfol Cano
+					</h1>
+					<p>
+						Desarrollador de aplicaciones web recientemente especializado en Inteligencia Artificial y Big Data con una gran pasión por el aprendizaje. <span>Estoy interesado en cambiar el rumbo de mi carrera profesional para orientarla al prometedor mundo de la programación de Inteligencia Artificial y el de la ciencia de datos y Big Data.</span>
+					</p>
+					<div class="call-to-action">
+						<a href="./Currículum 2024.pdf" class="button black">
+							Ver currículum
+						</a>
+						<a href="mailto:tofolcanodam@gmail.com" class="button white">
+							Contacta conmigo
+						</a>
+					</div>
+					<div class="social-links">
+						<a href="https://github.com/cristobalcanomorey">
+							<img src="./imgs/github.png" alt="GitHub" width="48" />
+						</a>
+						<a href="https://www.linkedin.com/in/cristobal-cano-morey/">
+							<img src="./imgs/linkedin.png" alt="LinkedIn" width="48" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="hero-yellow">
+				<img src="./imgs/hero-image2.png" alt="Tòfol Cano" width="100%" />
+			</div>
+		</section>
+		<section class="logos container">
+			<div class="marquee">
+				<div class="marqueegroup">				
+					<div class="track">
+						<img src="./imgs/azure.png" width="128" alt="Azure" class="hover-image" data-alias="Azure" />
+						<img src="./imgs/azuredatabricks.png" width="128" alt="Azure Databricks" class="hover-image" data-alias="Azure Databricks" />
+						<img src="./imgs/colab.png" width="128" alt="Google Colab" class="hover-image" data-alias="Google Colab"/>
+						<img src="./imgs/docker.png" width="128" alt="Docker" class="hover-image" data-alias="Docker"/>
+						<img src="./imgs/copeliasim.png" width="128" alt="Copelia Sim" class="hover-image" data-alias="Copelia Sim" />
+						<img src="./imgs/datashader.png" width="128" alt="Data shader" class="hover-image" data-alias="Data shader" />
+						<img src="./imgs/flask.png" width="128" alt="Flask" class="hover-image" data-alias="Flask" />
+						<img src="./imgs/flume.png" width="128" alt="Flume" class="hover-image" data-alias="Flume" />
+						<img src="./imgs/gradio.png" width="128" alt="Gradio" class="hover-image" data-alias="Gradio" />
+						<img src="./imgs/gym.svg" width="128" alt="Farama Gymnasium" class="hover-image" data-alias="Farama Gymnasium" />
+						<img src="./imgs/hadoop.png" width="128" alt="Hadoop" class="hover-image" data-alias="Hadoop" />
+						<img src="./imgs/hbase.png" width="128" alt="Hbase" class="hover-image" data-alias="Hbase" />
+						<img src="./imgs/hive.png" width="128" alt="Hive" class="hover-image" data-alias="Hive" />
+						<img src="./imgs/huggingface.png" width="128" alt="Hugging Face" class="hover-image" data-alias="Hugging Face" />
+						<img src="./imgs/tibcojaspersoft.png" width="128" alt="Jasper Reports" class="hover-image" data-alias="TIBCO Jaspersoft" />
+						<img src="./imgs/jupyter.png" width="128" alt="jupyter" class="hover-image" data-alias="Jupyter" />
+						<img src="./imgs/keras.png" width="128" alt="Keras" class="hover-image" data-alias="Keras" />
+						<img src="./imgs/knime.png" width="128" alt="Knime" class="hover-image" data-alias="Knime" />
+						<img src="./imgs/langchain.png" width="128" alt="Lang Chain" class="hover-image" data-alias="Lang Chain" />
+						<img src="./imgs/matplotlib.png" width="128" alt="Matplotlib" class="hover-image" data-alias="Matplotlib" />
+						<!-- <img src="./imgs/mllib.png" width="128" alt="MLLib" class="hover-image" data-alias="MLLib" /> -->
+						<img src="./imgs/mongodb.png" width="128" alt="MongoDB" class="hover-image" data-alias="MongoDB" />
+						<img src="./imgs/neo4j.png" width="128" alt="Neo4j" class="hover-image" data-alias="Neo4j" />
+						<img src="./imgs/ngrok.png" width="128" alt="ngrok" class="hover-image" data-alias="ngrok" />
+						<img src="./imgs/nltk.png" width="128" alt="nltk" class="hover-image" data-alias="nltk" />
+						<img src="./imgs/numpy.png" width="128" alt="Numpy" class="hover-image" data-alias="Numpy" />
+						<img src="./imgs/pandas.png" width="128" alt="Pandas" class="hover-image" data-alias="Pandas" />
+						<!-- <img src="./imgs/piglatin.png" width="128" alt="Apache Pig Latin" class="hover-image" data-alias="Apache Pig Latin" /> -->
+						<img src="./imgs/plotly.png" width="128" alt="Plotly" class="hover-image" data-alias="Plotly" />
+						<!-- <img src="./imgs/poetry.png" width="128" alt="Poetry" class="hover-image" data-alias="Poetry" /> -->
+						<img src="./imgs/powerbi.png" width="128" alt="Power BI" class="hover-image" data-alias="Power BI" />
+						<!-- <img src="./imgs/pyspark.png" width="128" alt="PySpark" class="hover-image" data-alias="PySpark" /> -->
+						<img src="./imgs/vscode.png" width="128" alt="VS Code" class="hover-image" data-alias="VS Code" />
+						<img src="./imgs/python.png" width="128" alt="Python" class="hover-image" data-alias="Python" />
+						<img src="./imgs/poetry.png" width="128" alt="Poetry" class="hover-image" data-alias="Poetry" />
+						<img src="./imgs/pytorch.png" width="128" alt="PyTorch" class="hover-image" data-alias="PyTorch" />
+						<img src="./imgs/scikitlearn.png" width="128" alt="Scikit Learn" class="hover-image" data-alias="Scikit Learn" />
+						<img src="./imgs/scipy.png" width="128" alt="SciPy" class="hover-image" data-alias="SciPy" />
+						<img src="./imgs/seaborn.png" width="128" alt="Seaborn" class="hover-image" data-alias="Seaborn" />
+						<img src="./imgs/skfuzzy.png" width="128" alt="Skfuzzy" class="hover-image" data-alias="Skfuzzy" />
+						<img src="./imgs/spark.png" width="128" alt="Spark" class="hover-image" data-alias="Spark" />
+						<img src="./imgs/sqoop.png" width="128" alt="Sqoop" class="hover-image" data-alias="Sqoop" />
+						<img src="./imgs/tensorflow.png" width="128" alt="Tensorflow" class="hover-image" data-alias="Tensorflow" />
+					</div>
+				</div>
+				<div class="marqueegroup segundo">				
+					<div class="track">
+						<img src="./imgs/azure.png" width="128" alt="Azure" class="hover-image" data-alias="Azure" />
+						<img src="./imgs/azuredatabricks.png" width="128" alt="Azure Databricks" class="hover-image" data-alias="Azure Databricks" />
+						<img src="./imgs/colab.png" width="128" alt="Google Colab" class="hover-image" data-alias="Google Colab"/>
+						<img src="./imgs/docker.png" width="128" alt="Docker" class="hover-image" data-alias="Docker"/>
+						<img src="./imgs/copeliasim.png" width="128" alt="Copelia Sim" class="hover-image" data-alias="Copelia Sim" />
+						<img src="./imgs/datashader.png" width="128" alt="Data shader" class="hover-image" data-alias="Data shader" />
+						<img src="./imgs/flask.png" width="128" alt="Flask" class="hover-image" data-alias="Flask" />
+						<img src="./imgs/flume.png" width="128" alt="Flume" class="hover-image" data-alias="Flume" />
+						<img src="./imgs/gradio.png" width="128" alt="Gradio" class="hover-image" data-alias="Gradio" />
+						<img src="./imgs/gym.svg" width="128" alt="Farama Gymnasium" class="hover-image" data-alias="Farama Gymnasium" />
+						<img src="./imgs/hadoop.png" width="128" alt="Hadoop" class="hover-image" data-alias="Hadoop" />
+						<img src="./imgs/hbase.png" width="128" alt="Hbase" class="hover-image" data-alias="Hbase" />
+						<img src="./imgs/hive.png" width="128" alt="Hive" class="hover-image" data-alias="Hive" />
+						<img src="./imgs/huggingface.png" width="128" alt="Hugging Face" class="hover-image" data-alias="Hugging Face" />
+						<img src="./imgs/tibcojaspersoft.png" width="128" alt="TIBCO Jaspersoft" class="hover-image" data-alias="TIBCO Jaspersoft" />
+						<img src="./imgs/jupyter.png" width="128" alt="jupyter" class="hover-image" data-alias="Jupyter" />
+						<img src="./imgs/keras.png" width="128" alt="Keras" class="hover-image" data-alias="Keras" />
+						<img src="./imgs/knime.png" width="128" alt="Knime" class="hover-image" data-alias="Knime" />
+						<img src="./imgs/langchain.png" width="128" alt="Lang Chain" class="hover-image" data-alias="Lang Chain" />
+						<img src="./imgs/matplotlib.png" width="128" alt="Matplotlib" class="hover-image" data-alias="Matplotlib" />
+						<!-- <img src="./imgs/mllib.png" width="128" alt="MLLib" class="hover-image" data-alias="MLLib" /> -->
+						<img src="./imgs/mongodb.png" width="128" alt="MongoDB" class="hover-image" data-alias="MongoDB" />
+						<img src="./imgs/neo4j.png" width="128" alt="Neo4j" class="hover-image" data-alias="Neo4j" />
+						<img src="./imgs/ngrok.png" width="128" alt="ngrok" class="hover-image" data-alias="ngrok" />
+						<img src="./imgs/nltk.png" width="128" alt="nltk" class="hover-image" data-alias="nltk" />
+						<img src="./imgs/numpy.png" width="128" alt="Numpy" class="hover-image" data-alias="Numpy" />
+						<img src="./imgs/pandas.png" width="128" alt="Pandas" class="hover-image" data-alias="Pandas" />
+						<!-- <img src="./imgs/piglatin.png" width="128" alt="Apache Pig Latin" class="hover-image" data-alias="Apache Pig Latin" /> -->
+						<img src="./imgs/plotly.png" width="128" alt="Plotly" class="hover-image" data-alias="Plotly" />
+						<!-- <img src="./imgs/poetry.png" width="128" alt="Poetry" class="hover-image" data-alias="Poetry" /> -->
+						<img src="./imgs/powerbi.png" width="128" alt="Power BI" class="hover-image" data-alias="Power BI" />
+						<!-- <img src="./imgs/pyspark.png" width="128" alt="PySpark" class="hover-image" data-alias="PySpark" /> -->
+						<img src="./imgs/vscode.png" width="128" alt="VS Code" class="hover-image" data-alias="VS Code" />
+						<img src="./imgs/python.png" width="128" alt="Python" class="hover-image" data-alias="Python" />
+						<img src="./imgs/poetry.png" width="128" alt="Poetry" class="hover-image" data-alias="Poetry" />
+						<img src="./imgs/pytorch.png" width="128" alt="PyTorch" class="hover-image" data-alias="PyTorch" />
+						<img src="./imgs/scikitlearn.png" width="128" alt="Scikit Learn" class="hover-image" data-alias="Scikit Learn" />
+						<img src="./imgs/scipy.png" width="128" alt="SciPy" class="hover-image" data-alias="SciPy" />
+						<img src="./imgs/seaborn.png" width="128" alt="Seaborn" class="hover-image" data-alias="Seaborn" />
+						<img src="./imgs/skfuzzy.png" width="128" alt="Skfuzzy" class="hover-image" data-alias="Skfuzzy" />
+						<img src="./imgs/spark.png" width="128" alt="Spark" class="hover-image" data-alias="Spark" />
+						<img src="./imgs/sqoop.png" width="128" alt="Sqoop" class="hover-image" data-alias="Sqoop" />
+						<img src="./imgs/tensorflow.png" width="128" alt="Tensorflow" class="hover-image" data-alias="Tensorflow" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="skills" class="skills container">
+			<h2>
+				<small>Sobre mí</small>
+				Habilidades
+			</h2>
+			<div class="holder-blue">
+				<div class="left-column">
+					<h3>Inteligencia Artificial</h3>
+					<ul>
+						<li>Python</li>
+						<li>Librerías para IA y BD</li>
+						<li>Gestión de proyectos de IA</li>
+						<li>Plataformas de IA</li>
+						<li>Herramientas no-code</li>
+						<li>Aprendizaje automático</li>
+						<li>Clasificación</li>
+						<li>Regresión</li>
+						<li>Aprendizaje no supervisado</li>
+						<li>Redes neuronales artificiales</li>
+						<li>Convergencia tecnológica</li>
+						<li>Automatización</li>
+						<li>Validación</li>
+						<li>PDDL</li>
+						<li>Lógica difusa</li>
+						<li>Sistemas expertos</li>
+						<li>Robótica</li>
+						<li>DL-NLP</li>
+						<li>GPT</li>
+						<li>Stable Diffusion</li>
+						<li>GAN</li>
+						<li>RL</li>
+					</ul>
+					<h3>Big Data</h3>
+					<ul>
+						<li>Apache Hadoop</li>
+						<li>Apache Flume</li>
+						<li>Apache Sqoop</li>
+						<li>Apache Hive</li>
+						<li>Apache Hbase</li>
+						<li>Apache Spark</li>
+						<li>Azure Databricks</li>
+						<li>Computación distribuida</li>
+						<li>Map Reduce</li>
+						<li>YARN</li>
+						<li>Apache Pig</li>
+						<li>ETL</li>
+						<li>Monitoraje de calidad de datos</li>
+						<li>Data lake</li>
+						<li>Data warehouse</li>
+						<li>MongoDB</li>
+						<li>NoSQL</li>
+						<li>Visualización y analisis de datos</li>
+						<li>Neo4j</li>
+						<li>OLTP y OLAP</li>
+						<li>MDX</li>
+						<li>PowerBI</li>
+					</ul>
+				</div>
+				<div class="right-column">
+					<h3>Un poco sobre mí</h3>
+					<p>
+						Hola soy Tòfol Cano, desarrollador de aplicaciones web recientemente matriculado en un curso de especialización en Inteligencia Artificial y Big Data. Estoy interesado en todo lo que tenga que ver con el mundo de la programación de Inteligencia Artificial; la gestión, visualización e análisis del Big Data y la integración de ambas tecnologías para la creación de soluciones dinámicas.
+					</p>
+					<p>
+						Estoy actualmente continuando mi formación de manera autodidacta en varias plataformas educativas en línea como Coursera, EdX, Udemy, etc. En mi tiempo libre estoy trabajando en ampliar el apartado de "proyectos propios" con pequeñas demos interactivas que estarán disponibles en ésta web y cuyo desarrollo será publicado en mi perfil de GitHub.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="projects" class="work-experience container">
+			<h2>
+				<small>Reciente</small>
+				Curso de especialización
+			</h2>
+			<div class="jobs">
+				<article>
+					<figure>
+						<div>
+							<a href="https://florpredictor.streamlit.app/">
+								<img src="./imgs/course_project1.jpg" alt="AI generated image about the project" width="100%" />
+							</a>
+							<figcaption>
+								Gestión de proyectos de IA
+							</figcaption>
+						</div>
+					</figure>
+					<h3>Gestión de proyectos de IA</h3>
+					<div>Tarea del curso de especialización</div>
+					<p>Gestión de un proyecto de clasificación de flores utilizando varios algoritmos de aprendizaje automático diferentes, realizado para aprender a gestionar proyectos de IA.</p>
+					<div class="skills-in-project">
+						<img src="imgs/python.png" alt="Python">
+						<img src="imgs/poetry.png" alt="Poetry">
+						<img src="imgs/flask.png" alt="Flask">
+						<img src="imgs/github.png" alt="GitHub">
+						<img src="imgs/jupyter.png" alt="Jupyter">
+						<img src="imgs/vscode.png" alt="vscode">
+					</div>
+				</article>
+				<article>
+					<figure>
+						<div>
+							<a href="https://dockercluster.streamlit.app/">
+								<img src="./imgs/course_project2.png" alt="Cluster diagram of the project" width="100%" />
+							</a>
+							<figcaption>
+								Gestión de proyectos de IA
+							</figcaption>
+						</div>
+					</figure>
+					<h3>Setup de un cluster sobre Docker</h3>
+					<div>Tarea del curso de especialización</div>
+					<p>Creación de un cluster sobre Docker con 1 nodo maestro, 3 nodos workers y un nodo para JupyterLab para analizar datos sobre él en otras tareas, realizado para aprender a crear un cluster sobre Docker.</p>
+					<div class="skills-in-project">
+						<img src="imgs/docker.png" alt="Docker">
+						<img src="imgs/spark.png" alt="Apache Spark">
+						<img src="imgs/jupyter.png" alt="Jupyter">
+					</div>
+				</article>								
+			</div>
+		</section>
+		<!-- <section class="work-experience container">
+			<h2>
+				<small>Reciente</small>
+				Proyectos propios
+			</h2>
+			<div class="jobs">
+				<article>
+					<figure>
+						<div>
+							<img src="./imgs/workplace-1.jpg" alt="Workplace 1 - YouTube Creator" width="100%" />
+							<figcaption>
+								Workplace - 1 YouTube Creator
+							</figcaption>
+						</div>
+					</figure>
+					<h3>YouTube Content Creator</h3>
+					<div>2020-current</div>
+					<p>Content creation online teaching people about how to code using HTML, CSS, JS.</p>
+				</article>
+				<article>
+					<figure>
+						<div>
+							<img src="./imgs/workplace-2.jpg" alt="Workplace 2 - Moshi Moshi Marketing" width="100%" />
+							<figcaption>
+								Workplace - Moshi Moshi Marketing
+							</figcaption>
+						</div>
+					</figure>
+					<h3>Moshi Moshi Marketing</h3>
+					<div>20018-2020</div>
+					<p>Marketing agency building websites and programming them from the ground up. </p>
+				</article>
+				<article>
+					<figure>
+						<div>
+							<img src="./imgs/workplace-3.jpg" alt="Workplace 3 - Chamber of Commerce" width="100%" />
+							<figcaption>
+								Workplace - Chamber of Commerce
+							</figcaption>
+						</div>
+					</figure>
+					<h3>Chamber of Commerce</h3>
+					<div>2013-2018</div>
+					<p>A small to large business organisation that helps facilitate advice and support.</p>
+				</article>
+			</div>
+		</section> -->
+		<section id="chatbot" class="chatbot container">
+			<h2>
+				<small>
+					Habla conmigo
+				</small>
+				Chatbot
+			</h2>
+			<div class="chatbot-blue">
+				<div class="chat-info">
+					<h3>Question Answering AI</h3>
+					<p>He creado un chatbot de control de calidad utilizando un modelo de Hugging Face llamado "deepset/roberta-base-squad2" que conoce todas mis habilidades, experiencia laboral y tiene una copia resumida de mi currículum. Puedes usarlo para hacer preguntas sobre mí para tener una mejor idea de quién soy y lo que he hecho. Por ahora sólo entiende inglés así que tendrás que preguntarle en inglés.</p>
+					<p>Está desarrollado y desplegado en los servidores de stremlit por lo que cada vez que cargas la página tienes que esperar un rato a que arranque el servidor e instale las dependencias... Es la desventaja de no pagar por mi propio hosting.</p>
+					<p>También puedes descargarte mi currículum aquí si quieres echarle un vistazo.  Actualmente estoy buscando nuevas oportunidades, así que si tienes un proyecto para el que crees que encajaría bien, ¡ponte en contacto conmigo!</p>
+					<a href="./Currículum 2024.pdf" class="button black">Download Resume</a>
+				</div>
+				<div class="chat-box">
+					<iframe id="embed" src="https://chatter-bot.streamlit.app/?embed=true" frameborder="0" allowfullscreen>
+
+					</iframe> 
+				</div>
+				
+				<!-- <div class="chat-box">
+					<div id="chat-area" class="scroll-area">
+						<ul id="chat-log">
+							<li>
+								<span class="avatar bot">AI</span>
+								<div class="message">
+									Hi, I'm a friendly chatbot that lets you interactive with this portfolio and CV. How can I help?
+								</div>
+							</li>
+							
+						</ul>
+					</div>
+					<form id="chatform" class="chat-message">
+						<input id="chatinput" type="text" placeholder="Hey Tofol, ¿qué habilidades se te dan mejor?">
+						<button id="chatsend" class="button black">Enviar</button>
+					</form>
+				</div> -->
+			</div>
+		</section>
+		<section class="work-experience container">
+			<h2>
+				<small>Previo</small>
+				Experiencia profesional
+			</h2>
+			<div class="jobs">
+				<article>
+					<figure>
+						<div>
+							<a href="https://soib.es/informacio-i-ofertes-soib-jove-qualificats-entitats-locals/">
+								<img src="./imgs/yoenib32.jpeg" alt="Trabajo en IB3" width="100%" />
+							</a>
+							<figcaption>
+								Yo trabajando en IB3
+							</figcaption>
+						</div>
+					</figure>
+					<h3>Desarrollo web en IB3</h3>
+					<div>2022-2023</div>
+					<p>Desarroll web para los servicios online que ofrece la cadena de televisión local IB3 utilizando PHP, HTML, CSS y JS.</p>
+					<section id="projects" class="bento container">
+						<div class="bento-grid">
+							<figure class="bento-item">
+								<img src="./imgs/adminnoticiasib3.PNG" alt="Admin site for the news" width="100%" />
+								<figcaption>
+									Web para portadistas de noticias, permitía arrastrar y soltar las noticias en su posición
+								</figcaption>
+							</figure>
+							<figure class="bento-item">
+								<img src="./imgs/alacartaib3.PNG" alt="IB3 a la carta" width="100%" />
+								<figcaption>
+									IB3 a la carta
+								</figcaption>
+							</figure>
+							<figure class="bento-item">
+								<img src="./imgs/noticiaib3.PNG" alt="Noticia de IB3" width="100%" />
+								<figcaption>
+									Página de una noticia de IB3
+								</figcaption>
+							</figure>
+							<figure class="bento-item">
+								<img src="./imgs/landingnoticiasib3.PNG" alt="Landing IB3 noticias" width="100%" />
+								<figcaption>
+									Landing page de la web de IB3 Noticias, haciendo scroll se añadían más noticias al final de la página
+								</figcaption>
+							</figure>
+							<figure class="bento-item">
+								<img src="./imgs/directesib3.png" alt="IB3 Directes" width="100%" />
+								<figcaption>
+									Landing page de la web de IB3 Directes
+								</figcaption>
+							</figure>
+						</div>
+					</section>
+				</article>				
+			</div>
+		</section>
+		
+		
+		
+	</main>
+</body>
+<!-- <script src="https://unpkg.com/puppeteer-web">
+</script>
+
+<script>
+  const browser = await puppeteer.connect({
+    browserWSEndpoint: `ws://0.0.0.0:8080`, // <-- connect to a server running somewhere
+    ignoreHTTPSErrors: true
+  });
+
+  const pagesCount = (await browser.pages()).length;
+  const browserWSEndpoint = await browser.wsEndpoint();
+  console.log({ browserWSEndpoint, pagesCount });
+</script> -->
+</html>
+
+
+
+
