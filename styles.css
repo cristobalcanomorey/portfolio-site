@@ -356,8 +356,8 @@ h3 {
 				gap:10px;
 				margin-right:100px;
 				margin-bottom:20px;
-				height: 121px;
-				overflow-y: scroll;
+				/* height: 121px;
+				overflow-y: scroll; */
 				@media(max-width:915px){
 					margin-right:0px;
 				}
@@ -397,11 +397,20 @@ h3 {
 		@media(max-width:1024px){
 			flex-direction:column;
 		}
+		.f1{
+			flex: 1;
+		}
+		
+		.holder-blue{
+			background-color: var(--blue-100);
+		}
+		
 		article {
 			background-color: var(--yellow-100);
 			padding:30px;
 			border-radius:30px;
 			flex:1;
+			height: 100%;
 			h3 {
 				margin-top:20px;
 				margin-bottom:10px;
@@ -410,6 +419,9 @@ h3 {
 				font-weight:600;
 				margin-bottom:5px;
 				color: var(--base-800);
+			}
+			ul {
+				padding-left: 30px;
 			}
 			p {
 				margin-bottom:10px;
@@ -656,3 +668,258 @@ h3 {
 }
 
 
+.contact {
+	.holder-yellow{
+		background-color: var(--yellow-100);
+		border-radius: 30px;
+		padding: 30px;
+		margin-top: 30px;
+	}
+    
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-info a {
+    background-color: var(--blue);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-info a:hover {
+    background-color: var(--blue-800);
+    text-decoration: none;
+}
+
+
+.carousel-container {
+    position: relative;
+    /* max-width: 80%; */
+    margin: auto;
+    overflow: hidden;
+    height: 500px; /* Set a fixed height for the carousel */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+	&:hover {
+		/* figcaption {
+			opacity:1;
+			visibility:visible;
+		} */
+		img {
+			transform: scale(0.9);
+		}
+	}
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+    display: block;
+    cursor: pointer; /* Make the image clickable */
+	transition: ease 3s all;
+}
+
+.carousel-item figcaption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item:hover figcaption {
+    opacity: 1;
+}
+
+button.prev,
+button.next {
+	font-size: 2em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.prev:hover,
+button.next:hover{
+	background-color: rgba(0, 0, 0, 0.7);
+} 
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    animation: fadeIn 0.5s;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    animation: zoomIn 0.6s;
+}
+
+#caption {
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+	width: 80%;
+    margin: 0 auto;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes zoomIn {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+
+/* styles.css */
+.contact-me {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.contact-me h2 {
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin: 10px 0 5px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact button {
+	border: none;
+    cursor: pointer;
+}
+
+/* .contact button:hover {
+    background-color: #0056b3;
+} */
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    margin-top: 20px;
+}
+
+.testimonials {
+    margin-top: 20px;
+}
+
+.testimonials blockquote {
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    border-left: 5px solid #ccc;
+    background-color: #f9f9f9;
+    font-style: italic;
+}
+
+.testimonials cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.form{
+	p{
+		margin-bottom: 20px;
+	}
+}

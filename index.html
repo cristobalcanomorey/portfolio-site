@@ -3,12 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio Web Design</title>
+	<title>Portfolio Website</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./styles.css">
-	<script src="./scripts.js"></script>
 	<link rel="icon" type="image/jpg" href="./imgs/favicon.jpg">
 </head>
 <body>
@@ -20,16 +19,25 @@
 		<nav>
 			<ul id="menu">
 				<li>
+					<a href="#estudios">Estudios</a>
+				</li>
+				<li>
+					<a href="#proyectos_curso">Proyectos del curso</a>
+				</li>
+				<li>
 					<a href="#skills">Habilidades</a>
 				</li>
 				<li>
-					<a href="#projects">Proyectos</a>
+					<a href="#experiencia">Experiencia</a>
 				</li>
+				<!-- <li>
+					<a href="#projects_propios">Proyectos propios</a>
+				</li> -->
 				<li>
 					<a href="#chatbot">Chatbot</a>
 				</li>
 				<li>
-					<a href="mailto:tofolcanodam@gmail.com" class="button">Contacta conmigo</a>
+					<a href="#contacto" class="button">Contacta conmigo</a>
 				</li>
 			</ul>
 			<a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
@@ -47,13 +55,13 @@
 						Tòfol Cano
 					</h1>
 					<p>
-						Desarrollador de aplicaciones web recientemente especializado en Inteligencia Artificial y Big Data con una gran pasión por el aprendizaje. <span>Estoy interesado en cambiar el rumbo de mi carrera profesional para orientarla al prometedor mundo de la programación de Inteligencia Artificial y el de la ciencia de datos y Big Data.</span>
+						Hola soy Tòfol Cano, desarrollador de aplicaciones web recientemente titulado en un curso de especialización en Inteligencia Artificial y Big Data. Estoy interesado en todo lo que tenga que ver con el mundo de la programación de Inteligencia Artificial; la gestión, visualización e análisis del Big Data y la integración de ambas tecnologías para la creación de soluciones dinámicas.
 					</p>
 					<div class="call-to-action">
-						<a href="./Currículum 2024.pdf" class="button black">
+						<!-- <a href="./Currículum 2024.pdf" class="button black">
 							Ver currículum
-						</a>
-						<a href="mailto:tofolcanodam@gmail.com" class="button white">
+						</a> -->
+						<a href="#contacto" class="button black">
 							Contacta conmigo
 						</a>
 					</div>
@@ -69,6 +77,176 @@
 			</div>
 			<div class="hero-yellow">
 				<img src="./imgs/hero-image2.png" alt="Tòfol Cano" width="100%" />
+			</div>
+		</section>
+		
+		<section id="estudios" class="skills container">
+			<h2>
+				<small>Reciente</small>
+				Curso de especialización
+			</h2>
+			<div class="holder-blue">				
+				<div class="right-column">
+					<h3>Especialización en IA y Big Data</h3>
+					<p>
+						Soy un desarrollador de aplicaciones web recientemente especializado en Inteligencia Artificial y Big Data a través del <a href="https://iedib.net/wordpress/?page_id=3232">curso de especialización
+						del instituto IEDIB</a> con una gran pasión por el aprendizaje.
+						<span>Estoy interesado en cambiar el rumbo de mi carrera profesional para orientarla al prometedor mundo de la programación de Inteligencia Artificial y el de la ciencia de datos y Big Data.</span>
+					</p>
+					<p>
+						Estoy actualmente continuando mi formación de manera autodidacta en varias plataformas educativas en línea como Coursera, EdX, Udemy, etc. En mi tiempo libre estoy trabajando en ampliar mi portfolio con pequeñas demos interactivas que estarán disponibles en ésta web y cuyo codigo será publicado en mi perfil de GitHub.
+					</p>
+					<p>
+						También tengo el título de formación profesional de grado superior en desarrollo de aplicaciones web y el título de grado medio en sistemas microinformáticos y redes.
+					</p>
+					<h3>
+						<!-- <small>Curso de especialización</small> -->
+						Algunos proyectos del curso
+					</h3>
+					<p>
+						A continuación, se puede ver una pequeña muestra —en forma de mini-proyectos interactivos— de las habilidades que he adquirido en las tareas del curso de especialización en Inteligencia Artificial y Big Data. Haciendo clic en su imagen, te dirigirá a su respectiva aplicación de Streamlit, que he creado para explicar el funcionamiento y permitir la interacción con el programa.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="proyectos_curso" class="work-experience container">
+			
+			<div class="jobs">
+				<article>
+					<figure>
+						<div>
+							<a href="https://florpredictor.streamlit.app/">
+								<img src="./imgs/course_project1.jpg" alt="AI generated image about the project" width="100%" />
+							</a>
+							<figcaption>
+								Gestión de proyectos de IA
+							</figcaption>
+						</div>
+					</figure>
+					<h3>Gestión de proyectos de IA</h3>
+					<div>Tarea del curso de especialización</div>
+					<p>Gestión de un proyecto de clasificación de flores utilizando varios algoritmos de aprendizaje automático diferentes, realizado para aprender a gestionar proyectos de IA.</p>
+					<div class="skills-in-project">
+						<img src="imgs/python.png" alt="Python" data-alias="Python" class="hover-image">
+						<img src="imgs/poetry.png" alt="Poetry" data-alias="Poetry" class="hover-image">
+						<img src="imgs/flask.png" alt="Flask" data-alias="Flask" class="hover-image">
+						<img src="imgs/github.png" alt="GitHub" data-alias="GitHub" class="hover-image">
+						<img src="imgs/jupyter.png" alt="Jupyter" data-alias="Jupyter" class="hover-image">
+						<img src="imgs/vscode.png" alt="vscode" data-alias="vscode" class="hover-image">
+					</div>
+				</article>
+				<article>
+					<figure>
+						<div>
+							<a href="https://dockercluster.streamlit.app/">
+								<img src="./imgs/course_project2.png" alt="Cluster diagram of the project" width="100%" />
+							</a>
+							<figcaption>
+								Cluster de Apache Spark sobre contenedores de Docker
+							</figcaption>
+						</div>
+					</figure>
+					<h3>Setup de un cluster sobre Docker</h3>
+					<div>Tarea del curso de especialización</div>
+					<p>Creación de un cluster sobre Docker con 1 nodo maestro, 3 nodos workers y un nodo para JupyterLab para analizar datos sobre él en otras tareas del curso, realizado para aprender a crear un cluster sobre Docker.</p>
+					<div class="skills-in-project">
+						<img src="imgs/docker.png" alt="Docker" data-alias="Docker" class="hover-image">
+						<img src="imgs/spark.png" alt="Apache Spark" data-alias="Apache Spark" class="hover-image">
+						<img src="imgs/jupyter.png" alt="Jupyter" data-alias="Jupyter" class="hover-image">
+					</div>
+				</article>								
+			</div>
+		</section>
+		
+		<section id="skills" class="skills container">
+			<h2>
+				<small>Sobre mí</small>
+				Habilidades
+			</h2>
+			<div class="holder-blue">
+				<div class="left-column">
+					<article>
+						<h3>Inteligencia Artificial</h3>
+						<ul>
+							<li>Python</li>
+							<li>Librerías para IA y BD</li>
+							<li>Gestión de proyectos de IA</li>
+							<li>Plataformas de IA</li>
+							<li>Herramientas no-code</li>
+							<li>Aprendizaje automático</li>
+							<li>Clasificación</li>
+							<li>Regresión</li>
+							<li>Aprendizaje no supervisado</li>
+							<li>Redes neuronales artificiales</li>
+							<li>Convergencia tecnológica</li>
+							<li>Automatización</li>
+							<li>Validación</li>
+							<li>PDDL</li>
+							<li>Lógica difusa</li>
+							<li>Sistemas expertos</li>
+							<li>Robótica</li>
+							<li>DL-NLP</li>
+							<li>GPT</li>
+							<li>Stable Diffusion</li>
+							<li>GAN</li>
+							<li>RL</li>
+						</ul>
+					</article>
+				</div>
+				<div class="left-column">
+					<article>
+						<h3>Big Data</h3>
+						<ul>
+							<li>Apache Hadoop</li>
+							<li>Apache Flume</li>
+							<li>Apache Sqoop</li>
+							<li>Apache Hive</li>
+							<li>Apache Hbase</li>
+							<li>Apache Spark</li>
+							<li>Azure Databricks</li>
+							<li>Computación distribuida</li>
+							<li>Map Reduce</li>
+							<li>YARN</li>
+							<li>Apache Pig</li>
+							<li>ETL</li>
+							<li>Monitoraje de calidad de datos</li>
+							<li>Data lake</li>
+							<li>Data warehouse</li>
+							<li>MongoDB</li>
+							<li>NoSQL</li>
+							<li>Visualización y analisis de datos</li>
+							<li>Neo4j</li>
+							<li>OLTP y OLAP</li>
+							<li>MDX</li>
+							<li>PowerBI</li>
+						</ul>	
+					</article>
+				</div>
+				<div class="left-column">
+					<article>
+						<h3>Desarrollo Web</h3>
+						<ul>
+							<li>HTML5</li>
+							<li>CSS</li>
+							<li>XML</li>
+							<li>JS</li>
+							<li>PHP</li>
+							<li>Java</li>
+							<li>MySQL</li>
+							<li>Apache Tomcat</li>
+							<li>REST</li>
+							<li>git</li>
+							<li>GitHub</li>
+							<li>AJAX/API</li>
+							<li>Diseño responsive</li>
+							<li>Bootstrap</li>
+							<li>jQuery</li>
+							<li>Amazon AWS</li>
+							<li>WordPress</li>
+							<li>Joomla</li>
+					</article>
+				</div>
 			</div>
 		</section>
 		<section class="logos container">
@@ -169,173 +347,119 @@
 				</div>
 			</div>
 		</section>
-		<section id="skills" class="skills container">
+		
+		<section id="experience" class="work-experience container">
 			<h2>
-				<small>Sobre mí</small>
-				Habilidades
+				<small>Previo</small>
+				Experiencia profesional
 			</h2>
-			<div class="holder-blue">
-				<div class="left-column">
-					<h3>Inteligencia Artificial</h3>
-					<ul>
-						<li>Python</li>
-						<li>Librerías para IA y BD</li>
-						<li>Gestión de proyectos de IA</li>
-						<li>Plataformas de IA</li>
-						<li>Herramientas no-code</li>
-						<li>Aprendizaje automático</li>
-						<li>Clasificación</li>
-						<li>Regresión</li>
-						<li>Aprendizaje no supervisado</li>
-						<li>Redes neuronales artificiales</li>
-						<li>Convergencia tecnológica</li>
-						<li>Automatización</li>
-						<li>Validación</li>
-						<li>PDDL</li>
-						<li>Lógica difusa</li>
-						<li>Sistemas expertos</li>
-						<li>Robótica</li>
-						<li>DL-NLP</li>
-						<li>GPT</li>
-						<li>Stable Diffusion</li>
-						<li>GAN</li>
-						<li>RL</li>
-					</ul>
-					<h3>Big Data</h3>
-					<ul>
-						<li>Apache Hadoop</li>
-						<li>Apache Flume</li>
-						<li>Apache Sqoop</li>
-						<li>Apache Hive</li>
-						<li>Apache Hbase</li>
-						<li>Apache Spark</li>
-						<li>Azure Databricks</li>
-						<li>Computación distribuida</li>
-						<li>Map Reduce</li>
-						<li>YARN</li>
-						<li>Apache Pig</li>
-						<li>ETL</li>
-						<li>Monitoraje de calidad de datos</li>
-						<li>Data lake</li>
-						<li>Data warehouse</li>
-						<li>MongoDB</li>
-						<li>NoSQL</li>
-						<li>Visualización y analisis de datos</li>
-						<li>Neo4j</li>
-						<li>OLTP y OLAP</li>
-						<li>MDX</li>
-						<li>PowerBI</li>
-					</ul>
+			<div class="jobs">
+				<div class="left-column f1 ">
+					<article class="holder-blue">
+						<h3>Desarrollo web en IB3</h3>
+						<div>2022-2023</div>
+						<!-- <p>Desarrollo web para los servicios online que ofrece la cadena de televisión local IB3 utilizando PHP, HTML, CSS y JS.</p> -->
+						<p>En esta experiencia me he familiarizado con el uso de PHP, HTML, CSS, JS y peticiones AJAX a sus apis.</p>						
+						<p>Durante ese año de experiencia profesional —obtenida gracias al <a href="https://www.caib.es/seucaib/es/202/administracions/tramites/tramite/5028479/">"SOIB qualificats primera experiència"</a>— en colaboración con mis compañeros de trabajo y con la ayuda de mi supervisor proporcioné a la empresa los siguientes servicios:</p>
+						
+						<ul>
+							<li>Creación de nuevas secciones de la web de IB3 Televisió e IB3 Ràdio</li>
+							<li>Desarrollo inicial de la plataforma de contenido HbbTV de IB3</li>
+							<li>Desarrollo de la web IB3 Directe, IB3 Noticies e IB3 a la carta</li>
+							<li>Uso de las librerías de JQuery UI para el desarrollo del sistema CMS de la web IB3 Noticies</li>
+							<li>Adaptación semántica de las URL de la web IB3 a la carta</li>
+						</ul>
+					</article>	
 				</div>
-				<div class="right-column">
-					<h3>Un poco sobre mí</h3>
-					<p>
-						Hola soy Tòfol Cano, desarrollador de aplicaciones web recientemente matriculado en un curso de especialización en Inteligencia Artificial y Big Data. Estoy interesado en todo lo que tenga que ver con el mundo de la programación de Inteligencia Artificial; la gestión, visualización e análisis del Big Data y la integración de ambas tecnologías para la creación de soluciones dinámicas.
-					</p>
-					<p>
-						Estoy actualmente continuando mi formación de manera autodidacta en varias plataformas educativas en línea como Coursera, EdX, Udemy, etc. En mi tiempo libre estoy trabajando en ampliar el apartado de "proyectos propios" con pequeñas demos interactivas que estarán disponibles en ésta web y cuyo desarrollo será publicado en mi perfil de GitHub.
-					</p>
+				<div class="left-column f1">
+					<article>
+						<div class="carousel-container">
+							<div class="carousel">
+								<div class="carousel-item">
+									<!-- <a href="https://soib.es/informacio-i-ofertes-soib-jove-qualificats-entitats-locals/">
+									</a> -->
+									<img src="./imgs/yoenib32.jpeg" alt="Trabajo en IB3" width="100%" />
+									<figcaption>
+										Yo trabajando en IB3
+									</figcaption>
+								</div>
+								<div class="carousel-item">
+									<img src="./imgs/adminnoticiasib3.PNG" alt="Web para portadistas de noticias, permitía arrastrar y soltar las noticias en su posición" width="100%" />
+									<figcaption>
+										Web para portadistas de noticias, permitía arrastrar y soltar las noticias en su posición
+									</figcaption>
+								</div>
+								<div class="carousel-item">
+									<img src="./imgs/alacartaib3.PNG" alt="Con IB3 a la carta puedes ver pasadas emisiones de programas de IB3 televisión e IB3 Radio, guardar tus emisiones favoritas en tu localstorage y automáticamente generar una playlist con ellas" width="100%" />
+									<figcaption>
+										IB3 a la carta
+									</figcaption>
+								</div>
+								<div class="carousel-item">
+									<img src="./imgs/noticiaib3.PNG" alt="Noticia de IB3" width="100%" />
+									<figcaption>
+										Página de una noticia de IB3
+									</figcaption>
+								</div>
+								<div class="carousel-item">
+									<img src="./imgs/landingnoticiasib3.PNG" alt="Landing IB3 noticias" width="100%" />
+									<figcaption>
+										Landing page de la web de IB3 Noticias, haciendo scroll se añadían más noticias al final de la página
+									</figcaption>
+								</div>
+								<div class="carousel-item">
+									<img src="./imgs/directesib3.png" alt="IB3 Directes" width="100%" />
+									<figcaption>
+										Landing page de la web de IB3 Directes
+									</figcaption>
+								</div>
+							</div>
+							<button class="prev" onclick="prevSlide()">&#10094;</button>
+							<button class="next" onclick="nextSlide()">&#10095;</button>
+						</div>
+						<div id="imageModal" class="modal" onclick="hideModal()">
+							<span class="close">&times;</span>
+							<img class="modal-content" id="modalImg">
+							<div id="caption"></div>
+						</div>
+						<!-- <section  class="bento container">
+							<div class="bento-grid">
+								<figure class="bento-item">
+									<img src="./imgs/adminnoticiasib3.PNG" alt="Admin site for the news" width="100%" />
+									<figcaption>
+										Web para portadistas de noticias, permitía arrastrar y soltar las noticias en su posición
+									</figcaption>
+								</figure>
+								<figure class="bento-item">
+									<img src="./imgs/alacartaib3.PNG" alt="IB3 a la carta" width="100%" />
+									<figcaption>
+										IB3 a la carta
+									</figcaption>
+								</figure>
+								<figure class="bento-item">
+									<img src="./imgs/noticiaib3.PNG" alt="Noticia de IB3" width="100%" />
+									<figcaption>
+										Página de una noticia de IB3
+									</figcaption>
+								</figure>
+								<figure class="bento-item">
+									<img src="./imgs/landingnoticiasib3.PNG" alt="Landing IB3 noticias" width="100%" />
+									<figcaption>
+										Landing page de la web de IB3 Noticias, haciendo scroll se añadían más noticias al final de la página
+									</figcaption>
+								</figure>
+								<figure class="bento-item">
+									<img src="./imgs/directesib3.png" alt="IB3 Directes" width="100%" />
+									<figcaption>
+										Landing page de la web de IB3 Directes
+									</figcaption>
+								</figure>
+							</div>
+						</section> -->
+					</article>	
 				</div>
 			</div>
 		</section>
-		<section id="projects" class="work-experience container">
-			<h2>
-				<small>Reciente</small>
-				Curso de especialización
-			</h2>
-			<div class="jobs">
-				<article>
-					<figure>
-						<div>
-							<a href="https://florpredictor.streamlit.app/">
-								<img src="./imgs/course_project1.jpg" alt="AI generated image about the project" width="100%" />
-							</a>
-							<figcaption>
-								Gestión de proyectos de IA
-							</figcaption>
-						</div>
-					</figure>
-					<h3>Gestión de proyectos de IA</h3>
-					<div>Tarea del curso de especialización</div>
-					<p>Gestión de un proyecto de clasificación de flores utilizando varios algoritmos de aprendizaje automático diferentes, realizado para aprender a gestionar proyectos de IA.</p>
-					<div class="skills-in-project">
-						<img src="imgs/python.png" alt="Python">
-						<img src="imgs/poetry.png" alt="Poetry">
-						<img src="imgs/flask.png" alt="Flask">
-						<img src="imgs/github.png" alt="GitHub">
-						<img src="imgs/jupyter.png" alt="Jupyter">
-						<img src="imgs/vscode.png" alt="vscode">
-					</div>
-				</article>
-				<article>
-					<figure>
-						<div>
-							<a href="https://dockercluster.streamlit.app/">
-								<img src="./imgs/course_project2.png" alt="Cluster diagram of the project" width="100%" />
-							</a>
-							<figcaption>
-								Gestión de proyectos de IA
-							</figcaption>
-						</div>
-					</figure>
-					<h3>Setup de un cluster sobre Docker</h3>
-					<div>Tarea del curso de especialización</div>
-					<p>Creación de un cluster sobre Docker con 1 nodo maestro, 3 nodos workers y un nodo para JupyterLab para analizar datos sobre él en otras tareas, realizado para aprender a crear un cluster sobre Docker.</p>
-					<div class="skills-in-project">
-						<img src="imgs/docker.png" alt="Docker">
-						<img src="imgs/spark.png" alt="Apache Spark">
-						<img src="imgs/jupyter.png" alt="Jupyter">
-					</div>
-				</article>								
-			</div>
-		</section>
-		<!-- <section class="work-experience container">
-			<h2>
-				<small>Reciente</small>
-				Proyectos propios
-			</h2>
-			<div class="jobs">
-				<article>
-					<figure>
-						<div>
-							<img src="./imgs/workplace-1.jpg" alt="Workplace 1 - YouTube Creator" width="100%" />
-							<figcaption>
-								Workplace - 1 YouTube Creator
-							</figcaption>
-						</div>
-					</figure>
-					<h3>YouTube Content Creator</h3>
-					<div>2020-current</div>
-					<p>Content creation online teaching people about how to code using HTML, CSS, JS.</p>
-				</article>
-				<article>
-					<figure>
-						<div>
-							<img src="./imgs/workplace-2.jpg" alt="Workplace 2 - Moshi Moshi Marketing" width="100%" />
-							<figcaption>
-								Workplace - Moshi Moshi Marketing
-							</figcaption>
-						</div>
-					</figure>
-					<h3>Moshi Moshi Marketing</h3>
-					<div>20018-2020</div>
-					<p>Marketing agency building websites and programming them from the ground up. </p>
-				</article>
-				<article>
-					<figure>
-						<div>
-							<img src="./imgs/workplace-3.jpg" alt="Workplace 3 - Chamber of Commerce" width="100%" />
-							<figcaption>
-								Workplace - Chamber of Commerce
-							</figcaption>
-						</div>
-					</figure>
-					<h3>Chamber of Commerce</h3>
-					<div>2013-2018</div>
-					<p>A small to large business organisation that helps facilitate advice and support.</p>
-				</article>
-			</div>
-		</section> -->
 		<section id="chatbot" class="chatbot container">
 			<h2>
 				<small>
@@ -346,10 +470,10 @@
 			<div class="chatbot-blue">
 				<div class="chat-info">
 					<h3>Question Answering AI</h3>
-					<p>He creado un chatbot de QA utilizando un modelo de Hugging Face llamado "deepset/roberta-base-squad2" que conoce todas mis habilidades, experiencia laboral y tiene una copia resumida de mi currículum. Puedes usarlo para hacer preguntas sobre mí para tener una mejor idea de quién soy y lo que he hecho. Por ahora sólo entiende inglés así que tendrás que preguntarle en inglés.</p>
+					<p>He creado un "chatbot" de QA utilizando un modelo de Hugging Face llamado "deepset/roberta-base-squad2" que conoce todas mis habilidades, experiencia laboral y tiene una copia resumida de mi currículum. Puedes usarlo para hacer preguntas sobre mí para tener una mejor idea de quién soy y lo que he hecho. Por ahora sólo entiende inglés así que tendrás que preguntarle en inglés.</p>
 					<p>Está desarrollado y desplegado en los servidores de stremlit por lo que cada vez que cargas la página tienes que esperar un rato a que arranque el servidor e instale las dependencias... Es la desventaja de no pagar por mi propio hosting.</p>
 					<p>También puedes descargarte mi currículum aquí si quieres echarle un vistazo.  Actualmente estoy buscando nuevas oportunidades, así que si tienes un proyecto para el que crees que encajaría bien, ¡ponte en contacto conmigo!</p>
-					<a href="./Currículum 2024.pdf" class="button black">Download Resume</a>
+					<a href="./Currículum 2024.pdf" class="button black">Descargar currículum</a>
 				</div>
 				<div class="chat-box">
 					<iframe id="embed" src="https://chatter-bot.streamlit.app/?embed=true" frameborder="0" allowfullscreen>
@@ -357,100 +481,42 @@
 					</iframe> 
 				</div>
 				
-				<!-- <div class="chat-box">
-					<div id="chat-area" class="scroll-area">
-						<ul id="chat-log">
-							<li>
-								<span class="avatar bot">AI</span>
-								<div class="message">
-									Hi, I'm a friendly chatbot that lets you interactive with this portfolio and CV. How can I help?
-								</div>
-							</li>
-							
-						</ul>
-					</div>
-					<form id="chatform" class="chat-message">
-						<input id="chatinput" type="text" placeholder="Hey Tofol, ¿qué habilidades se te dan mejor?">
-						<button id="chatsend" class="button black">Enviar</button>
+			</div>
+		</section>
+		<section id="contacto" class="contact container">
+			<div class="">
+				<h2>
+					<small>Conecta conmigo</small>
+					Contacto
+				</h2>				
+				<div class="holder-yellow form">
+					<h3>Formulario de contacto</h3>
+					<p>Si tienes alguna pregunta o quieres ponerte en contacto conmigo, no dudes en hacerlo a través del siguiente formulario o de mis redes sociales.</p>
+					
+					<form action="https://formspree.io/f/mrbzzkle" method="POST">
+						<label for="name">Nombre o Empresa:</label>
+						<input type="text" id="name" name="name" required>
+						
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required>
+						
+						<label for="message">Mensaje:</label>
+						<textarea id="message" name="message" rows="5" required></textarea>
+						
+						<button type="submit" class="button">Enviar</button>
 					</form>
-				</div> -->
+					<div class="social-links">
+						<a href="mailto:tofolcanodam@gmail.com">e-mail</a>
+						<a href="https://www.linkedin.com/in/cristobal-cano-morey/">LinkedIn</a>
+						<a href="https://github.com/cristobalcanomorey">GitHub</a>
+						<!-- Add more contact information as needed -->
+					</div>
+				</div>
 			</div>
-		</section>
-		<section class="work-experience container">
-			<h2>
-				<small>Previo</small>
-				Experiencia profesional
-			</h2>
-			<div class="jobs">
-				<article>
-					<figure>
-						<div>
-							<a href="https://soib.es/informacio-i-ofertes-soib-jove-qualificats-entitats-locals/">
-								<img src="./imgs/yoenib32.jpeg" alt="Trabajo en IB3" width="100%" />
-							</a>
-							<figcaption>
-								Yo trabajando en IB3
-							</figcaption>
-						</div>
-					</figure>
-					<h3>Desarrollo web en IB3</h3>
-					<div>2022-2023</div>
-					<p>Desarroll web para los servicios online que ofrece la cadena de televisión local IB3 utilizando PHP, HTML, CSS y JS.</p>
-					<section id="projects" class="bento container">
-						<div class="bento-grid">
-							<figure class="bento-item">
-								<img src="./imgs/adminnoticiasib3.PNG" alt="Admin site for the news" width="100%" />
-								<figcaption>
-									Web para portadistas de noticias, permitía arrastrar y soltar las noticias en su posición
-								</figcaption>
-							</figure>
-							<figure class="bento-item">
-								<img src="./imgs/alacartaib3.PNG" alt="IB3 a la carta" width="100%" />
-								<figcaption>
-									IB3 a la carta
-								</figcaption>
-							</figure>
-							<figure class="bento-item">
-								<img src="./imgs/noticiaib3.PNG" alt="Noticia de IB3" width="100%" />
-								<figcaption>
-									Página de una noticia de IB3
-								</figcaption>
-							</figure>
-							<figure class="bento-item">
-								<img src="./imgs/landingnoticiasib3.PNG" alt="Landing IB3 noticias" width="100%" />
-								<figcaption>
-									Landing page de la web de IB3 Noticias, haciendo scroll se añadían más noticias al final de la página
-								</figcaption>
-							</figure>
-							<figure class="bento-item">
-								<img src="./imgs/directesib3.png" alt="IB3 Directes" width="100%" />
-								<figcaption>
-									Landing page de la web de IB3 Directes
-								</figcaption>
-							</figure>
-						</div>
-					</section>
-				</article>				
-			</div>
-		</section>
-		
-		
-		
+        </section>
 	</main>
+	<script src="./scripts.js"></script>
 </body>
-<!-- <script src="https://unpkg.com/puppeteer-web">
-</script>
-
-<script>
-  const browser = await puppeteer.connect({
-    browserWSEndpoint: `ws://0.0.0.0:8080`, // <-- connect to a server running somewhere
-    ignoreHTTPSErrors: true
-  });
-
-  const pagesCount = (await browser.pages()).length;
-  const browserWSEndpoint = await browser.wsEndpoint();
-  console.log({ browserWSEndpoint, pagesCount });
-</script> -->
 </html>
 
 
