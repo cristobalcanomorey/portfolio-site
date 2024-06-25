@@ -365,6 +365,7 @@ h3 {
 	color: var(--base-800);
 	@media (max-width:915px){
 		font-size: 1.2em;
+		margin-top: 5px !important;
 	}
 }
 
@@ -446,6 +447,7 @@ h3 {
 			h3 {
 				margin-top:20px;
 				margin-bottom:10px;
+
 			}
 			div {
 				font-weight:600;
@@ -453,8 +455,10 @@ h3 {
 				color: var(--base-800);
 			}
 			ul {
-				font-size: 0.8em;
 				padding-left: 30px;
+				@media screen and (max-width: 915px) {
+					font-size: 0.8em;
+				}
 			}
 			p {
 				margin-bottom:10px;
